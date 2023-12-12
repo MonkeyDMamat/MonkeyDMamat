@@ -23,8 +23,8 @@ Saya seorang mahasiswa aktif semester 5 di Program Studi Sistem Informasi Kelaut
 
 ## Portofolio
 
-- [Proyek 1: Klasifikasi Gambar ](#) - Analisis data menggunakan Python dan pandas.
-- [Proyek 1: Analisis Data Bike-Sharing-Dataset ](#) - Analisis data menggunakan Python dan pandas.
+- [Proyek 1: Klasifikasi Gambar ](#Proyek_Akhir_Klasifikasi_Gambar.ipynb) - Analisis data menggunakan Python dan pandas.
+- [Proyek 1: Analisis Data Bike-Sharing-Dataset ](#Data_Analyst.ipynb) - Analisis data menggunakan Python dan pandas.
 
 ## Kontribusi
 
