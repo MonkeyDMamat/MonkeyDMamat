@@ -39,6 +39,6 @@ Jika Anda ingin berkomunikasi atau berkolaborasi, jangan ragu untuk menghubungi 
 
 ## Lisensi
 
-Proyek-proyek yang saya bagikan di sini dilisensikan di bawah Fauzi Ramadhan. Lihat [file LICENSE.md](LICENSE.md) untuk detail.
+Proyek-proyek yang saya bagikan di sini dilisensikan di bawah Fauzi Ramadhan. Lihat [file LICENSE.md](LICENSE1.md) untuk detail.
 
 Terima kasih telah mengunjungi profil saya!
