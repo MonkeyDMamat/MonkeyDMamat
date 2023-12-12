@@ -12,7 +12,7 @@ Saya seorang mahasiswa aktif semester 5 di Program Studi Sistem Informasi Kelaut
 
 ### Proyek Terkini
 
-- 📈 **Analisis Data Penjualan:** Proyek ini melibatkan analisis data penjualan menggunakan Python dan pandas. [Lihat Proyek](#)
+- 📈 **Analisis Data Ikan Lele Perairan Air Tawar:** Proyek ini melibatkan analisis data Ikan Lele Perairan Air Tawar menggunakan Python dan pandas. [Lihat Proyek](#)
 
 ### Keterampilan dasar
 
@@ -23,8 +23,8 @@ Saya seorang mahasiswa aktif semester 5 di Program Studi Sistem Informasi Kelaut
 
 ## Portofolio
 
-- [Proyek 1: Analisis Data Penjualan](#) - Analisis data menggunakan Python.
-- [Proyek 2: [Judul Proyek]](#) - Deskripsi singkat proyek lainnya.
+- [Proyek 1: Klasifikasi Gambar ](#) - Analisis data menggunakan Python dan pandas.
+- [Proyek 1: Analisis Data Bike-Sharing-Dataset ](#) - Analisis data menggunakan Python dan pandas.
 
 ## Kontribusi
 
@@ -39,6 +39,6 @@ Jika Anda ingin berkomunikasi atau berkolaborasi, jangan ragu untuk menghubungi 
 
 ## Lisensi
 
-Proyek-proyek yang saya bagikan di sini dilisensikan di bawah [Nama Lisensi]. Lihat [file LICENSE.md](LICENSE.md) untuk detail.
+Proyek-proyek yang saya bagikan di sini dilisensikan di bawah Fauzi Ramadhan. Lihat [file LICENSE.md](LICENSE.md) untuk detail.
 
 Terima kasih telah mengunjungi profil saya!
