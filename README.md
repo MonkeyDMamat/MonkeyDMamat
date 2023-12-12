@@ -12,7 +12,8 @@ Saya seorang mahasiswa aktif semester 5 di Program Studi Sistem Informasi Kelaut
 
 ### Proyek Terkini
 
-- 📈 **Analisis Data Ikan Lele Perairan Air Tawar:** Proyek ini melibatkan analisis data Ikan Lele Perairan Air Tawar menggunakan Python dan pandas. [Lihat Proyek](#)
+- 📈 **Analisis Data Ikan Lele Perairan Air Tawar:** Proyek ini melibatkan analisis data Ikan Lele Perairan Air Tawar menggunakan Python dan pandas. [Lihat Proyek](#UAS)
+- 📈 **Analisis Data Hero Mobile Legends Bang-Bang:** Proyek ini melibatkan analisis Hero Mobile Legends Bang-Bang menggunakan Python dan pandas. [Lihat Proyek](#Pertemuan8)
 
 ### Keterampilan dasar
 
@@ -23,8 +24,8 @@ Saya seorang mahasiswa aktif semester 5 di Program Studi Sistem Informasi Kelaut
 
 ## Portofolio
 
-- [Proyek 1: Klasifikasi Gambar ](#Proyek_Akhir_Klasifikasi_Gambar.ipynb) - Analisis data menggunakan Python dan pandas.
-- [Proyek 1: Analisis Data Bike-Sharing-Dataset ](#Data_Analyst.ipynb) - Analisis data menggunakan Python dan pandas.
+- [Proyek 1: Klasifikasi Gambar ](#rockpaperscissors) - Analisis data menggunakan Python dan pandas.
+- [Proyek 1: Analisis Data Bike-Sharing-Dataset ](#Bike-Sharing-Dataset) - Analisis data menggunakan Python dan pandas.
 
 ## Kontribusi
 
