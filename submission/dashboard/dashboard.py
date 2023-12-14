@@ -44,7 +44,7 @@ if st.checkbox("Tampilkan Statistik Jam"):
 
 # Visualisasi untuk pertanyaan bisnis
 # Pertanyaan 1: Bagaimana jumlah pengguna sepeda harian dipengaruhi oleh faktor-faktor seperti cuaca dan hari kerja?
-st.subheader("Pertanyaan 1: Bagaimana jumlah pengguna sepeda harian dipengaruhi oleh faktor-faktor seperti cuaca dan hari kerja?)
+st.subheader("Pertanyaan 1: Bagaimana jumlah pengguna sepeda harian dipengaruhi oleh faktor-faktor seperti cuaca dan hari kerja?")
 plt.figure(figsize=(12, 6))
 sns.lineplot(x='dteday', y='cnt', hue='weathersit', data=day_df)
 plt.title('Pengaruh Cuaca terhadap Jumlah Peminjaman Sepeda Harian')
