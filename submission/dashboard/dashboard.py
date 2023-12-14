@@ -7,13 +7,15 @@ Original file is located at
     https://colab.research.google.com/drive/1_tV_wMGqFJtuoZVoi2ewK9ahZkZksiMH
 """
 
-import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import streamlit as st
 from matplotlib.dates import DateFormatter
 from babel.numbers import format_currency
+import plotly.express as px
+sns.set(style='dark')
 
 # Mendefinisikan DataFrame day_df dan hour_df
 url_keduanya_data = "https://raw.githubusercontent.com/MonkeyDMamat/MonkeyDMamat/master/submission/dashboard/keduanya.csv"
@@ -106,8 +108,10 @@ plt.tight_layout()
 st.pyplot()
 
 # Menyimpan hasil analisis
-st.sidebar.subheader("Kesimpulan")
-st.sidebar.text("Penggunaan sepeda harian dipengaruhi oleh faktor hari kerja, suhu, dan cuaca. Suhu dan kelembaban tampaknya memiliki pengaruh yang signifikan pada penggunaan sepeda. Faktor cuaca, seperti hari yang cerah atau berawan, dapat memengaruhi pola penggunaan sepeda pada jam tertentu. Perbedaan signifikan terlihat antara hari kerja dan libur dalam hal pola penggunaan sepeda.")
+st.subheader("Kesimpulan")
+st.text("Penggunaan sepeda harian dipengaruhi oleh faktor hari kerja, suhu, dan cuaca. Suhu dan kelembaban tampaknya memiliki pengaruh yang signifikan pada penggunaan sepeda. Faktor cuaca, seperti hari yang cerah atau berawan, dapat memengaruhi pola penggunaan sepeda pada jam tertentu. Perbedaan signifikan terlihat antara hari kerja dan libur dalam hal pola penggunaan sepeda.")
 
+st.sidebar.subheader("Fauzi Ramadhan")
+st.sidebar.text ("Portopolio Projects Bike Sharing Data Analysis.")
 # Menyajikan dashboard
 st.set_option('deprecation.showPyplotGlobalUse', False)  # Agar matplotlib tidak menampilkan pesan peringatan
