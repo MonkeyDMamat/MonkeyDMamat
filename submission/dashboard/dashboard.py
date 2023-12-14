@@ -44,73 +44,57 @@ if st.checkbox("Tampilkan Statistik Jam"):
 
 # Visualisasi untuk pertanyaan bisnis
 # Pertanyaan 1: Bagaimana jumlah pengguna sepeda harian dipengaruhi oleh faktor-faktor seperti cuaca dan hari kerja?
-st.subheader("Pertanyaan 1: Jumlah Pengguna Sepeda Harian dan Faktor-Faktor Pengaruhnya")
-fig, axes = plt.subplots(2, 2, figsize=(12, 10))
-
-# Visualisasi 2: Jumlah pengguna sepeda harian berdasarkan hari kerja atau tidak
-sns.boxplot(x='workingday', y='cnt', data=day_df, ax=axes[0, 1])
-axes[0, 1].set_title('Jumlah Pengguna Sepeda Harian Berdasarkan Hari Kerja')
-
-# Visualisasi 3: Distribusi jumlah pengguna sepeda harian pada jam tertentu
-sns.lineplot(x='hr', y='cnt', data=hour_df, hue='workingday', ci=None, ax=axes[1, 0])
-axes[1, 0].set_title('Distribusi Jumlah Pengguna Sepeda Harian pada Jam Tertentu (Hari Kerja vs. Libur)')
-
-# Visualisasi 4: Pengaruh suhu dan kelembaban terhadap jumlah pengguna sepeda
-sns.scatterplot(x='temp', y='cnt', hue='hum', size='hum', data=day_df, ax=axes[1, 1])
-axes[1, 1].set_title('Pengaruh Suhu dan Kelembaban terhadap Jumlah Pengguna Sepeda')
-
-plt.tight_layout()
-st.pyplot()
+st.subheader("Pertanyaan 1: Bagaimana jumlah pengguna sepeda harian dipengaruhi oleh faktor-faktor seperti cuaca dan hari kerja?)
+plt.figure(figsize=(12, 6))
+sns.lineplot(x='dteday', y='cnt', hue='weathersit', data=day_df)
+plt.title('Pengaruh Cuaca terhadap Jumlah Peminjaman Sepeda Harian')
+plt.xlabel('Tanggal')
+plt.ylabel('Jumlah Peminjaman')
+plt.show()
 
 # Pertanyaan 2: Apakah suhu dan kelembaban memiliki pengaruh pada penggunaan sepeda?
-st.subheader("Pertanyaan 2: Pengaruh Suhu dan Kelembaban pada Penggunaan Sepeda")
-fig, axes = plt.subplots(1, 2, figsize=(12, 5))
-
-# Visualisasi 1: Distribusi jumlah pengguna sepeda berdasarkan suhu
-sns.histplot(day_df['temp'], bins=30, kde=True, ax=axes[0])
-axes[0].set_title('Distribusi Jumlah Pengguna Sepeda Berdasarkan Suhu')
-
-# Visualisasi 2: Distribusi jumlah pengguna sepeda berdasarkan kelembaban
-sns.histplot(day_df['hum'], bins=30, kde=True, ax=axes[1])
-axes[1].set_title('Distribusi Jumlah Pengguna Sepeda Berdasarkan Kelembaban')
-
-plt.tight_layout()
-st.pyplot()
+st.subheader("Pertanyaan 2: Apakah suhu dan kelembaban memiliki pengaruh pada penggunaan sepeda?")
+plt.figure(figsize=(12, 6))
+sns.scatterplot(x='temp', y='cnt', hue='hum', data=hour_df)
+plt.title('Pengaruh Suhu dan Kelembaban terhadap Jumlah Peminjaman Sepeda')
+plt.xlabel('Suhu')
+plt.ylabel('Jumlah Peminjaman')
+plt.legend(title='Kelembaban')
+plt.show()
 
 # Pertanyaan 3: Bagaimana faktor cuaca mempengaruhi penggunaan sepeda pada level jam dalam sehari?
-st.subheader("Pertanyaan 3: Pengaruh Faktor Cuaca pada Penggunaan Sepeda pada Level Jam")
-fig, axes = plt.subplots(1, 2, figsize=(12, 5))
-
-# Visualisasi 1: Distribusi jumlah pengguna sepeda pada jam tertentu berdasarkan cuaca
-sns.lineplot(x='hr', y='cnt', data=hour_df, hue='weathersit', ci=None, ax=axes[0])
-axes[0].set_title('Distribusi Jumlah Pengguna Sepeda pada Jam Tertentu (Berdasarkan Cuaca)')
-
-# Visualisasi 2: Boxplot jumlah pengguna sepeda pada jam tertentu berdasarkan cuaca
-sns.boxplot(x='hr', y='cnt', data=hour_df, hue='weathersit', ax=axes[1])
-axes[1].set_title('Boxplot Jumlah Pengguna Sepeda pada Jam Tertentu (Berdasarkan Cuaca)')
-
-plt.tight_layout()
-st.pyplot()
+st.subheader("Pertanyaan 3: Bagaimana faktor cuaca mempengaruhi penggunaan sepeda pada level jam dalam sehari?")
+plt.figure(figsize=(12, 6))
+sns.lineplot(x='hr', y='cnt', hue='weathersit', data=hour_df)
+plt.title('Pengaruh Cuaca terhadap Jumlah Peminjaman Sepeda pada Level Jam')
+plt.xlabel('Jam')
+plt.ylabel('Jumlah Peminjaman')
+plt.legend(title='Cuaca')
+plt.show()
 
 # Pertanyaan 4: Apakah terdapat perbedaan dalam penggunaan sepeda antara hari kerja dan hari libur pada jam-jam tertentu?
-st.subheader("Pertanyaan 4: Perbedaan Penggunaan Sepeda antara Hari Kerja dan Hari Libur")
-fig, axes = plt.subplots(1, 2, figsize=(12, 5))
-
-# Visualisasi 1: Distribusi jumlah pengguna sepeda pada jam tertentu berdasarkan hari kerja atau libur
-sns.lineplot(x='hr', y='cnt', data=hour_df, hue='workingday', ci=None, ax=axes[0])
-axes[0].set_title('Distribusi Jumlah Pengguna Sepeda pada Jam Tertentu (Hari Kerja vs. Libur)')
-
-# Visualisasi 2: Boxplot jumlah pengguna sepeda pada jam tertentu berdasarkan hari kerja atau libur
-sns.boxplot(x='hr', y='cnt', data=hour_df, hue='workingday', ax=axes[1])
-axes[1].set_title('Boxplot Jumlah Pengguna Sepeda pada Jam Tertentu (Hari Kerja vs. Libur)')
-
-plt.tight_layout()
-st.pyplot()
+st.subheader("Pertanyaan 4: Apakah terdapat perbedaan dalam penggunaan sepeda antara hari kerja dan hari libur pada jam-jam tertentu?")
+plt.figure(figsize=(12, 6))
+sns.pointplot(x='hr', y='cnt', hue='workingday', data=hour_df, markers=['o', 's'])
+plt.title('Perbedaan Penggunaan Sepeda antara Hari Kerja dan Hari Libur pada Level Jam')
+plt.xlabel('Jam')
+plt.ylabel('Jumlah Peminjaman')
+plt.legend(title='Hari Kerja')
+plt.show()
 
 # Menyimpan hasil analisis
 st.subheader("Kesimpulan")
-st.text("Penggunaan sepeda harian dipengaruhi oleh faktor hari kerja, suhu, dan cuaca. Suhu dan kelembaban tampaknya memiliki pengaruh yang signifikan pada penggunaan sepeda. Faktor cuaca, seperti hari yang cerah atau berawan, dapat memengaruhi pola penggunaan sepeda pada jam tertentu. Perbedaan signifikan terlihat antara hari kerja dan libur dalam hal pola penggunaan sepeda.")
+st.text("Kesimpulan dari Pertanyaan 1 adalah Dari visualisasi, terlihat bahwa penggunaan sepeda harian dipengaruhi oleh cuaca. Pada hari-hari dengan cuaca yang buruk (weathersit tinggi), jumlah peminjaman sepeda cenderung lebih rendah.")
 
+st.subheader("Kesimpulan")
+st.text("Kesimpulan dari Pertanyaan 2 adalah Dari scatter plot, terlihat bahwa terdapat hubungan positif antara suhu dan jumlah peminjaman sepeda, namun tidak terlihat pola yang jelas antara kelembaban dan jumlah peminjaman sepeda.")
+        
+st.subheader("Kesimpulan")
+st.text("Kesimpulan dari Pertanyaan 3 adalah Dari line plot, terlihat bahwa cuaca berpengaruh pada jumlah peminjaman sepeda pada berbagai jam dalam sehari. Pada cuaca tertentu, penggunaan sepeda cenderung lebih tinggi atau lebih rendah pada jam-jam tertentu.")
+
+st.subheader("Kesimpulan")
+st.text("Kesimpulan dari Pertanyaan 4 adalah Dari point plot, terlihat bahwa terdapat perbedaan pola penggunaan sepeda antara hari kerja dan hari libur pada jam-jam tertentu. Pada hari kerja, peminjaman sepeda cenderung lebih tinggi pada jam-jam tertentu dibandingkan hari libur.")
+             
 st.sidebar.subheader("Fauzi Ramadhan")
 st.sidebar.text ("Portopolio Projects Bike Sharing Data Analysis.")
 # Menyajikan dashboard
