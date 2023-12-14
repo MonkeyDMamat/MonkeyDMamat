@@ -1,15 +1,12 @@
+import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-import streamlit as st
 from matplotlib.dates import DateFormatter
-from babel.numbers import format_currency
-import plotly.express as px
-sns.set(style='dark')
 
-# Mendefinisikan DataFrame day_df dan hour_df
-url_keduanya_data = "https://raw.githubusercontent.com/MonkeyDMamat/MonkeyDMamat/master/submission/dashboard/keduanya.csv"
+# Mendefinisikan DataFrame keduanya_df
+url_keduanya = "https://raw.githubusercontent.com/MonkeyDMamat/MonkeyDMamat/master/submission/dashboard/keduanya.csv"
 keduanya_df = pd.read_csv(url_keduanya)
 
 # Set judul dashboard
@@ -18,60 +15,72 @@ st.title("Bike Sharing Data Analysis Dashboard")
 # Menampilkan data
 if st.checkbox("Tampilkan Data Hari"):
     st.write("### Data Hari")
-    st.dataframe(day_df.head())
+    st.dataframe(keduanya_df.head())
 
 if st.checkbox("Tampilkan Data Jam"):
     st.write("### Data Jam")
-    st.dataframe(hour_df.head())
+    st.dataframe(keduanya_df.head())
 
 # Menampilkan ringkasan statistik
 if st.checkbox("Tampilkan Statistik Hari"):
     st.write("### Statistik Hari")
-    st.write(day_df.describe())
+    st.write(keduanya_df.describe())
 
 if st.checkbox("Tampilkan Statistik Jam"):
     st.write("### Statistik Jam")
-    st.write(hour_df.describe())
+    st.write(keduanya_df.describe())
 
 # Visualisasi untuk pertanyaan bisnis
 # Pertanyaan 1: Bagaimana jumlah pengguna sepeda harian dipengaruhi oleh faktor-faktor seperti cuaca dan hari kerja?
 st.subheader("Pertanyaan 1: Bagaimana jumlah pengguna sepeda harian dipengaruhi oleh faktor-faktor seperti cuaca dan hari kerja?")
 plt.figure(figsize=(12, 6))
-sns.lineplot(x='dteday', y='cnt', hue='weathersit', data=day_df)
+sns.lineplot(x='dteday', y='cnt', hue='weathersit', data=keduanya_df)
 plt.title('Pengaruh Cuaca terhadap Jumlah Peminjaman Sepeda Harian')
 plt.xlabel('Tanggal')
 plt.ylabel('Jumlah Peminjaman')
 plt.show()
 
+plt.tight_layout()
+st.pyplot()
+
 # Pertanyaan 2: Apakah suhu dan kelembaban memiliki pengaruh pada penggunaan sepeda?
 st.subheader("Pertanyaan 2: Apakah suhu dan kelembaban memiliki pengaruh pada penggunaan sepeda?")
 plt.figure(figsize=(12, 6))
-sns.scatterplot(x='temp', y='cnt', hue='hum', data=hour_df)
+sns.scatterplot(x='temp', y='cnt', hue='hum', data=keduanya_df)
 plt.title('Pengaruh Suhu dan Kelembaban terhadap Jumlah Peminjaman Sepeda')
 plt.xlabel('Suhu')
 plt.ylabel('Jumlah Peminjaman')
 plt.legend(title='Kelembaban')
 plt.show()
 
+plt.tight_layout()
+st.pyplot()
+
 # Pertanyaan 3: Bagaimana faktor cuaca mempengaruhi penggunaan sepeda pada level jam dalam sehari?
 st.subheader("Pertanyaan 3: Bagaimana faktor cuaca mempengaruhi penggunaan sepeda pada level jam dalam sehari?")
 plt.figure(figsize=(12, 6))
-sns.lineplot(x='hr', y='cnt', hue='weathersit', data=hour_df)
+sns.lineplot(x='hr', y='cnt', hue='weathersit', data=keduanya_df)
 plt.title('Pengaruh Cuaca terhadap Jumlah Peminjaman Sepeda pada Level Jam')
 plt.xlabel('Jam')
 plt.ylabel('Jumlah Peminjaman')
 plt.legend(title='Cuaca')
 plt.show()
 
+plt.tight_layout()
+st.pyplot()
+
 # Pertanyaan 4: Apakah terdapat perbedaan dalam penggunaan sepeda antara hari kerja dan hari libur pada jam-jam tertentu?
 st.subheader("Pertanyaan 4: Apakah terdapat perbedaan dalam penggunaan sepeda antara hari kerja dan hari libur pada jam-jam tertentu?")
 plt.figure(figsize=(12, 6))
-sns.pointplot(x='hr', y='cnt', hue='workingday', data=hour_df, markers=['o', 's'])
+sns.pointplot(x='hr', y='cnt', hue='workingday', data=keduanya_df, markers=['o', 's'])
 plt.title('Perbedaan Penggunaan Sepeda antara Hari Kerja dan Hari Libur pada Level Jam')
 plt.xlabel('Jam')
 plt.ylabel('Jumlah Peminjaman')
 plt.legend(title='Hari Kerja')
 plt.show()
+
+plt.tight_layout()
+st.pyplot()
 
 # Menyimpan hasil analisis
 st.subheader("Kesimpulan")
