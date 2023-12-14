@@ -16,10 +16,8 @@ from matplotlib.dates import DateFormatter
 from babel.numbers import format_currency
 
 # Mendefinisikan DataFrame day_df dan hour_df
-url_day = "https://raw.githubusercontent.com/MonkeyDMamat/MonkeyDMamat/master/submission/data/day.csv"
-url_hour = "https://raw.githubusercontent.com/MonkeyDMamat/MonkeyDMamat/master/submission/data/hour.csv"
-day_df = pd.read_csv(url_day)
-hour_df = pd.read_csv(url_hour)
+url_keduanya_data = "https://raw.githubusercontent.com/MonkeyDMamat/MonkeyDMamat/master/submission/dashboard/keduanya.csv"
+keduanya_df = pd.read_csv(url_keduanya)
 
 # Set judul dashboard
 st.title("Bike Sharing Data Analysis Dashboard")
