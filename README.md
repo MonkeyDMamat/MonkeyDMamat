@@ -12,8 +12,12 @@ Saya seorang mahasiswa aktif semester 5 di Program Studi Sistem Informasi Kelaut
 
 ### Proyek Terkini
 
-- 📈 **Analisis Data Ikan Lele Perairan Air Tawar:** Proyek ini melibatkan analisis data Ikan Lele Perairan Air Tawar menggunakan Python dan pandas. [Lihat Proyek](#Model_Klasifikasi_Perairan_Air_Tawar_Berdasarkan_Spesies_Ikan_Lele_Menggunakan_Metode_Random_Forest)
+- 📈 **Analisis Data Makrozobenthos (Benthosight):** Proyek ini melibatkan analisis, mengklasifikasikan, serta memprediksi 10 jenis makrozobenthos dengan menggunakan Konsep (AI) yaitu Transfer learning dengan menggunakan model Xception dan mendapatkan akurasi 84% serta dalam pengerjaan nya menggunakan Python dan pandas. [Lihat Proyek](#Submission)
+- 📈 **Analisis Data Website Berita Detik.com:** Proyek ini melibatkan analisis Analisis sederhana/singkat tentang website/berita detik.com menggunakan Python dan pandas. [Lihat Proyek](#Fauzi_Ramadhan_GA_180123.ipynb)
+- 📈 **Analisis Data : Klasifikasi Gambar :** Proyek ini melibatkan analisis dataset gambar dan mengklasifikasikan serta mengindentifikasi berdasarkan (Rock, Paper, dan Scissors) menggunakan Python dan pandas. [Lihat Proyek](#Proyek_Akhir_Klasifikasi_Gambar.ipynb)
+- 📈 **Analisis Data Bike-Sharing-Dataset:** Proyek ini melibatkan analisis penggunaan sepeda berdasarkan dataset per-jam dan per-hari menggunakan Python dan pandas. [Lihat Proyek](#Submission)
 - 📈 **Analisis Data Hero Mobile Legends Bang-Bang:** Proyek ini melibatkan analisis Hero Mobile Legends Bang-Bang menggunakan Python dan pandas. [Lihat Proyek](#Analisis_Statistik.ipynb)
+- 📈 **Analisis Data Ikan Lele Perairan Air Tawar:** Proyek ini melibatkan analisis data Ikan Lele Perairan Air Tawar menggunakan Python dan pandas. [Lihat Proyek](#Model_Klasifikasi_Perairan_Air_Tawar_Berdasarkan_Spesies_Ikan_Lele_Menggunakan_Metode_Random_Forest)
 
 ### Keterampilan dasar
 
@@ -25,7 +29,9 @@ Saya seorang mahasiswa aktif semester 5 di Program Studi Sistem Informasi Kelaut
 ## Portofolio
 
 - [Proyek 1: Klasifikasi Gambar ](#Proyek_Akhir_Klasifikasi_Gambar.ipynb) - Analisis data menggunakan Python dan pandas.
-- [Proyek 1: Analisis Data Bike-Sharing-Dataset ](#Submission) - Analisis data menggunakan Python dan pandas.
+- [Proyek 2: Analisis Data Bike-Sharing-Dataset ](#Submission) - Analisis data menggunakan Python dan pandas.
+- Mini Task Index Match, VLOOKUP and HLOOKUP Desember 2023 - Menganalisis data menggunakan Microsoft Excel dan Rumus-Rumusnya.
+- Mini Task SC Looker Data Studio Desember 2023 - Menganalisis data menggunakan analytics platform (BI Platform) gratis dari Google yaitu Looker Studio.
 
 ## Kontribusi
 
