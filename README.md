@@ -22,8 +22,11 @@ Saya seorang mahasiswa aktif semester 5 di Program Studi Sistem Informasi Kelaut
 ### Keterampilan dasar
 
 - Python
-- Pandas
+- R
 - SQL
+- Excel
+- Matplotlib
+- Seaborn
 - Analisis Data
 
 ## Portofolio
