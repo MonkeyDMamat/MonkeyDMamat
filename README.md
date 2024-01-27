@@ -5,8 +5,8 @@ Saya seorang mahasiswa aktif semester 5 di Program Studi Sistem Informasi Kelaut
 ## Tentang Saya
 
 - 🎓 Mahasiswa semester 5 di Program Studi Sistem Informasi Kelautan.
-- 📊 Memiliki minat dalam analisis data dan ilmu kelautan.
-- 💻 Entry-level Data Analyst.
+- 📊 Memiliki minat dalam bidang data science dan analisis data.
+- 💻 Data Analyst & Data Scientist.
 
 ## Proyek dan Keterampilan
 
