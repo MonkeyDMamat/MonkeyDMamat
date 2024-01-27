@@ -1,6 +1,6 @@
 # Halo, Saya Fauzi Ramadhan
 
-Saya seorang mahasiswa aktif semester 5 di Program Studi Sistem Informasi Kelautan di Universitas Pendidikan Indonesia. Saya memiliki minat khusus dalam analisis data dan saat ini sedang mengembangkan keterampilan saya dalam bidang tersebut.
+Saya seorang mahasiswa aktif semester 5 di Program Studi Sistem Informasi Kelautan di Universitas Pendidikan Indonesia. Saya memiliki minat khusus dalam bidang data science serta analisis data dan saat ini sedang mengembangkan keterampilan saya dalam bidang tersebut.
 
 ## Tentang Saya
 
